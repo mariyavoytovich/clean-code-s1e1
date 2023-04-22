@@ -8,7 +8,7 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.getElementById("todo-description");//Add a new task.
+var taskInput=document.getElementById("new-todo-description");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder=document.getElementById("active-todo-list");//ul of #active-todo-list
 var completedTasksHolder=document.getElementById("completed-todo-list");//completed-todo-list
@@ -85,7 +85,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit-button");
-    var containsClass=listItem.classList.contains("editable");
+    var containsClass=listItem.classList.contains("todo-list__item_editable");
     //If class of the parent is .editable
     if(containsClass){
 
@@ -99,7 +99,7 @@ var editTask=function(){
     }
 
     //toggle .editable on the parent.
-    listItem.classList.toggle("editable");
+    listItem.classList.toggle("todo-list__item_editable");
 };
 
 

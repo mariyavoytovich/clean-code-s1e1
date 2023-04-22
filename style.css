@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.header .more_inf {
+.header .header__link {
   font-family: fantasy, cursive;
 }
 
@@ -38,7 +38,7 @@
   flex-grow: 1;
 }
 
-.todo-add-section__description {
+.todo-add-section__add-new {
   display: flex;
 }
 
@@ -125,7 +125,7 @@
   vertical-align: middle;
 }
 
-.todo-list__item > .todo-selector {
+.todo-list__item > .todo-item__select {
   margin: 0 10px;
 }
 
@@ -161,11 +161,11 @@
   display: none;
 }
 
-.todo-list .todo-list__item.editable .text-input {
+.todo-list .todo-list__item_editable .text-input {
   display: inline-block;
   width: 224px;
 }
 
-.todo-list .todo-list__item.editable .todo-heading {
+.todo-list .todo-list__item_editable .todo-heading {
   display: none;
 }
