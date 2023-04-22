@@ -106,7 +106,7 @@
   margin: 0 0 20px;
 }
 
-#todo-description {
+#new-todo-description {
   width: 318px;
 }
 
@@ -136,7 +136,7 @@
   width: 226px;
 }
 
-.todo-list__item > input[type="text"] {
+.todo-list__item > .todo-item__description-input {
   width: 226px;
 }
 
